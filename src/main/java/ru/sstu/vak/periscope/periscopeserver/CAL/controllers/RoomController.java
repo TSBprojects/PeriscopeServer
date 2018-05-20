@@ -198,7 +198,7 @@ public class RoomController {
         if (token != null && !token.equals("") && accServ.isTokenValid(token)) {
             return null;
         } else {
-            return new Response<>(null, "invalid authToken");
+            return new Response<>(null, "Invalid authToken");
         }
     }
 }
