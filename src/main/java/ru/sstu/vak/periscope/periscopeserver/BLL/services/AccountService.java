@@ -36,26 +36,6 @@ public class AccountService implements IAccountService {
         this.users = users;
     }
 
-//    public void addUser() {
-//        UserModel u = new UserModel();
-//        u.setFirstName("FNAME");
-//        u.setLastName("LASTNAME");
-//        users.save(u);
-//    }
-//
-//    public ArrayList<UserModel> getUsers() {
-//        Iterable<UserModel> us = users.findAll();
-//        ArrayList<UserModel> list = new ArrayList<UserModel>();
-//        for (UserModel item : us) {
-//            list.add(item);
-//        }
-//        return list;
-//    }
-//
-//    public UserModel getUser() {
-//        return users.findById(1).get();
-//    }
-
     @Override
     public String loginUser(String login, String password) {
         User user = users.findByLoginAndHashPassword(login, getPasswordHash(password));
