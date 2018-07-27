@@ -1,4 +1,3 @@
 # Periscope server
 
-Простая серверная часть (rest api) для приложения [PeriscopeСlient](https://github.com/TSBprojects/PeriscopeClient) на основе Spring boot.
-
+A simple server part (rest api) for [PeriscopeСlient](https://github.com/TSBprojects/PeriscopeClient) applications based on Spring boot.
